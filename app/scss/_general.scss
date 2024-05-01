@@ -1,9 +1,10 @@
 html,
 body {
 	font-size: 0.83333vw;
-	
+	scroll-behavior: smooth;
 	box-sizing: border-box;
 	height: 100%;
+	background: #020202;
 	// @media (max-width: 1024px) {
 	// 	font-size: calc((16 / 10.24) * 1vw);
 	// }

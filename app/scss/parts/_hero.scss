@@ -50,6 +50,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: -1;
 }
 .menu {
     font-weight: 300;
@@ -68,6 +69,7 @@
     color: #fff;
     display: flex;
     align-items:center;
+    
 }
 .main-btn-icon-wrrap {
     width: em(101,48);
@@ -78,12 +80,13 @@
     align-items: center;
     border-radius: 50%;
     border: 1px solid #fff;
+    backdrop-filter: blur(25px);
 }
 .main-btn-icon {
 }
 .main-wrap{
-
     max-width: em(513);
+    margin-top: em(-245);
 }
 .title-main {
     font-weight: 300;
@@ -92,4 +95,10 @@
     letter-spacing: -0.04em;
     text-align: justify;
     color: #fff;
+}
+.arrow-down{
+    position: absolute;
+    right: em(40);
+    bottom: em(170);
+    width: em(26);
 }
