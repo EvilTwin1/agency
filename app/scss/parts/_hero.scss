@@ -1,12 +1,16 @@
 .hero {
-    min-height: 100vh;
-    height: 100%;
+    min-height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: em(60) em(40) 0 em(40);
+    padding: 0 em(40) 0 em(40);
+    position: relative;
+    overflow: hidden;
+    
 
     &__top {
+        padding-top: em(60);
         display: flex;
         justify-content: space-between;
     }
@@ -21,6 +25,31 @@
 }
 .logo {
     width: em(920);
+}
+.main-hero-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
+}
+.hero-top-gradient{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    rotate: 180deg;
+}
+.hero-bottom-gradient{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .menu {
     font-weight: 300;
@@ -52,8 +81,11 @@
 }
 .main-btn-icon {
 }
+.main-wrap{
+
+    max-width: em(513);
+}
 .title-main {
-    max-width: em(513,48);
     font-weight: 300;
     font-size: em(48);
     line-height: 110%;
