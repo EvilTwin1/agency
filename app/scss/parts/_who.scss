@@ -1,0 +1,51 @@
+.who {
+    margin-top: em(260);
+    padding: em(0) em(40) em(0) em(40);
+    position: relative;
+
+    &__title {
+        margin-left: 50%;
+        margin-bottom: em(120,48);
+    }
+
+    // .who__main-text
+
+    &__main-text {
+        margin-left: 50%;
+
+        width: em(915,48);
+        font-weight: 300;
+        font-size: em(48);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        color: #fff;
+    }
+
+    // .who__sub-text
+
+    &__sub-text {
+        margin-left: auto;
+        margin-top: em(85,24);
+
+        width: em(530,24);
+        font-weight: 300;
+        font-size: em(24);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        color: #fff;
+    }
+}
+
+.s1{
+    position: absolute;
+    top: em(-200);
+    left: 0;
+}
+
+.s2{
+    position: absolute;
+    right: 0;
+    bottom: em(-350);
+}

@@ -1,0 +1,39 @@
+html,
+body {
+	font-size: 0.83333vw;
+	font-family: "Inter Tight", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	
+	box-sizing: border-box;
+	height: 100%;
+	// @media (max-width: 1024px) {
+	// 	font-size: calc((16 / 10.24) * 1vw);
+	// }
+	@media (max-width: 500px) {
+		font-size: calc((16 / 4.8) * 1vw);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+* img {
+	max-width: 100%;
+	display: block;
+}
+.main {
+	border-top: 1px solid transparent;
+	position: relative;
+}
+.s-title {
+    font-weight: 300;
+    font-size: em(24);
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: #6e6e6e;
+}
+
+

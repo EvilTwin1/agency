@@ -1,0 +1,41 @@
+@import "normalize";
+@import "font";
+@import "vars";
+@import "function";
+
+/*---------- Общие стили ----------*/
+
+@import "general";
+
+/*---------- Общие стили ----------*/
+
+/*---------- Секции ----------*/
+
+@import "parts/hero";
+@import "parts/about";
+@import "parts/works";
+@import "parts/who";
+@import "parts/steps";
+// @import "parts/home/about";
+// @import "parts/home/steps";
+// @import "parts/home/calculator";
+// @import "parts/home/btn";
+
+// @import "parts/about/about-one";
+// @import "parts/about/about-two";
+// @import "parts/about/about-tree";
+// @import "parts/about/about-four";
+// @import "parts/about/about-five";
+
+// @import "parts/faq/question";
+
+// @import "parts/service/service-one";
+// @import "parts/service/table";
+
+
+
+.body{
+    background: #020202;
+}
+
+@import "media";

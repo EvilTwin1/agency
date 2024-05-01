@@ -1,0 +1,129 @@
+.works {
+    padding: em(136) em(40) 0 em(40);
+
+    &__title {}
+
+    &__info {
+        margin-top: em(120);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-weight: 500;
+        font-size: em(72);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        // text-align: justify;
+        color: #fff;
+    }
+
+    &__years {
+        font-weight: 300;
+        font-size: em(72);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        // text-align: justify;
+        color: #fff;
+    }
+
+    &__content {
+        margin-top: em(60);
+    }
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__sub {
+        display: flex;
+        justify-content: space-between;
+        margin-top: em(20);
+    }
+
+    &__btn {
+        width: 100%;
+        margin-top: em(20,36);
+        border: em(0.5,36) solid #6e6e6e;
+        border-radius: em(10,36);
+        padding: em(20,36) 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		font-weight: 300;
+        font-size: em(36);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #5a5a5a;
+    }
+
+	&__btn-icon {
+        width: em(30,36);
+        margin-left: em(40,36);
+    }
+
+}
+
+.card {
+    // display: flex;
+    // flex-direction: column;
+    width: em(900);
+    // .card__img
+
+    &__img-wrap{
+        overflow: hidden;
+        border-radius: em(15)
+    }
+
+    &__img {
+
+    }
+
+    // .card__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: em(20) 0;
+    }
+
+    // .card__name
+
+    &__name {
+        font-weight: 300;
+        font-size: em(24);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        color: #fff;
+    }
+
+    // .card__tags
+
+    &__tags {
+        font-weight: 300;
+        font-size: em(24);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        color: #6e6e6e;
+    }
+
+    // .card__year
+
+    &__year {
+        font-weight: 300;
+        font-size: em(24);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: justify;
+        color: #6e6e6e;
+    }
+}
+
+.card-min {
+    width: em(430);
+}
+
