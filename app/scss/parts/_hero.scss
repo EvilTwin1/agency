@@ -22,6 +22,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: em(155);
+        z-index: 2;
     }
 }
 .logo {
@@ -102,4 +103,5 @@
     right: em(40);
     bottom: em(170);
     width: em(26);
+    z-index: 2;
 }

@@ -1,24 +1,47 @@
+items = document.querySelectorAll('.services-inner-item');
 
+items.forEach(function(item, index) {
+	item.addEventListener("click", function(){
+		const img = this.getAttribute('data-img');
+		const text = this.getAttribute('data-text');
+
+		const mainImg = document.getElementById('img');
+		const mainText = document.getElementById('text');
+
+		mainImg.setAttribute('src', img);
+		mainText.innerHTML = text;
+
+
+		console.log(img, text);
+	})
+	
+});
 
 // Паралакс
 
-const parallaxElement = document.getElementById("parallax");
-const parallaxCont = document.querySelector(".paralax-wraper");
-// parallax-container
-// paralax-wraper
-if (parallaxCont) {
-	parallaxCont.addEventListener("mousemove", function (e) {
-		const x = (window.innerWidth - e.pageX * 2) / 600;
-		const y = (window.innerHeight - e.pageY * 2) / 600;
 
-		parallaxElement.style.transform = `translate(${x}%, ${y}%) scale(1.1)`;
-		// parallaxElement.style.transform = `translateX(${x}%) translateY(${y}%) scale(1.1)`;
-	});
+	// const parallaxElement = document.getElementById("parallax");
+	// const parallaxCont = document.querySelector(".paralax-wraper");
 
-	parallaxCont.addEventListener("mouseleave", () => {
-		parallaxElement.style.transform = "translate(${translateX}%, ${translateY}%) scale(1.1)";
-	});
-}
+
+	// parallax-container
+	// paralax-wraper
+
+
+
+	// if (parallaxCont) {
+	// 	parallaxCont.addEventListener("mousemove", function (e) {
+	// 		const x = (window.innerWidth - e.pageX * 2) / 600;
+	// 		const y = (window.innerHeight - e.pageY * 2) / 600;
+
+	// 		parallaxElement.style.transform = `translate(${x}%, ${y}%) scale(1.1)`;
+
+	// 	});
+
+	// 	parallaxCont.addEventListener("mouseleave", () => {
+	// 		parallaxElement.style.transform = "translate(${translateX}%, ${translateY}%) scale(1.1)";
+	// 	});
+	// }
 
 
 
