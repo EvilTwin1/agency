@@ -57,6 +57,11 @@
         line-height: 110%;
         letter-spacing: -0.04em;
         color: #5a5a5a;
+        transition: .5s;
+        &:hover{
+            border: em(0.5,36) solid #fff;
+            background-color: #fff;
+        }
     }
 
 	&__btn-icon {
@@ -79,7 +84,7 @@
     }
 
     &__img {
-
+        width: 100%;
     }
 
     // .card__inner

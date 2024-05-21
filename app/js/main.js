@@ -45,17 +45,17 @@ items.forEach(function(item, index) {
 
 
 
-// let header = document.querySelector(".header-container"),
-// 	headerH = document.querySelector(".header").clientHeight;
+let header = document.querySelector(".hero-second")
+	// headerH = document.querySelector(".header").clientHeight;
 
-// document.onscroll = function () {
-// 	let scroll = window.scrollY;
-// 	if (scroll > 10) {
-// 		header.classList.add("fixed");
-// 	} else {
-// 		header.classList.remove("fixed");
-// 	}
-// };
+document.onscroll = function () {
+	let scroll = window.scrollY;
+	if (scroll > 400) {
+		header.classList.add("hero__top-fixed");
+	} else {
+		header.classList.remove("hero__top-fixed");
+	}
+};
 
 
 
