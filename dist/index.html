@@ -25,7 +25,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,500;1,200;1,300&display=swap" rel="stylesheet">
-		<script src="js/script.min.js" defer></script>
+		
 
 	</head>
 
@@ -38,10 +38,10 @@
 				<img src="images/main-gradient.png" alt="" class="hero-top-gradient">
 
 				<nav class="menu ibm-plex-mono-light">
-					<a class="menu-link" href="">Projects,</a>
-					<a class="menu-link" href="">Services,</a>
-					<a class="menu-link" href="">Agency,</a>
-					<a class="menu-link" href="">Contact.</a>
+					<a class="menu-link" href="#works">Projects</a>,
+					<a class="menu-link" href="#services">Services</a>,
+					<a class="menu-link" href="#agency">Agency</a>,
+					<a class="menu-link" href="#contact">Contact</a>.
 				</nav>
 			</div>
 
@@ -50,10 +50,10 @@
 				<img src="images/main-gradient.png" alt="" class="hero-top-gradient">
 
 				<nav class="menu ibm-plex-mono-light">
-					<a class="menu-link" href="">Projects,</a>
-					<a class="menu-link" href="">Services,</a>
-					<a class="menu-link" href="">Agency,</a>
-					<a class="menu-link" href="">Contact.</a>
+					<a class="menu-link" href="#works">Projects</a>,
+					<a class="menu-link" href="#services">Services</a>,
+					<a class="menu-link" href="#agency">Agency</a>,
+					<a class="menu-link" href="#contact">Contact</a>.
 				</nav>
 			</div>
 
@@ -63,7 +63,7 @@
 					<span class="main-btn-icon-wrrap">
 						<svg width="31" height="28"class="main-btn-icon" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M26.0984 15.6559L10.08 24.9679V27.7999L30.72 15.7039V13.0159L10.08 0.919922V3.79992L26.0983 13.1119H0V15.6559L26.0984 15.6559Z" />
-						  </svg>
+						</svg>
 						<!-- <img src="images/btn-arrow.svg" alt="" class="main-btn-icon"> -->
 					</span>
 				</a>
@@ -86,7 +86,7 @@
 			<img src="images/main-gradient.png" alt="" class="hero-bottom-gradient">
 		</section>
 
-		<section class="about" id="about">
+		<section class="about section" id="about">
 			<div class="about__inner">
 				<img src="images/big-icon.png" alt="" class="about__fon">
 				<p class="s-title about__title ibm-plex-mono-light">[ Who We Are ]</p>
@@ -98,13 +98,16 @@
 				</p>
 				<a href="" class="about__link ibm-plex-mono-light">
 					About Us
-					<img src="images/arrow-slim.svg" alt="" class="about__icon">
+					<!-- <img src="images/arrow-slim.svg" alt="" class="about__icon"> -->
+					<svg class="about__icon" width="32" height="27" viewBox="0 0 32 27"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M27.1613 14.736L10.9922 24.048V26.88L31.8265 14.784V12.096L10.9922 0V2.88L27.1613 12.192H0.817383V14.736L27.1613 14.736Z"/>
+					</svg>
 				</a>
 				<p class="about__slogan ibm-plex-mono-light-italic">Keep the Main Thing the Main Thing.</p>
 			</div>
 		</section>
 
-		<section class="works">
+		<section class="works section" id="works">
 			<p class="s-title works__title ibm-plex-mono-light">[ Our Works ]</p>
 
 			<div class="works__info">
@@ -210,7 +213,7 @@
 			</div>
 		</section>
 
-		<section class="services">
+		<section class="services section" id="services">
 			<div class="services-left">
 				<img src="images/serv1.png" alt="" id="img" class="services-img">
 				<p class="services-icon ibm-plex-mono-light">></p>
@@ -236,7 +239,7 @@
 			
 		</section>
 
-		<section class="who">
+		<section class="who section">
 			<img src="images/s1.png" alt="" class="s1">
 			<img src="images/s2.png" alt="" class="s2">
 			<p class="s-title who__title ibm-plex-mono-light">[ About Us ]</p>
@@ -251,7 +254,7 @@
 			</p>
 		</section>
 
-		<section class="steps">
+		<section class="steps section">
 			<p class="s-title steps__title ibm-plex-mono-light">[ Our Process in three Steps ]</p>
 			<img src="images/s3.png" alt="" class="s3">
 			<div class="steps__row">
@@ -285,7 +288,7 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact section" id="contact">
 			<div class="contact-left">
 				<img src="images/NoRiskNoStory.svg" alt="" class="text-img">
 				<img src="images/s4.png" alt="" class="s4">
@@ -329,7 +332,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer section">
 			<div class="link-wraper">
 
 				<div class="link-wraper-column">
@@ -367,5 +370,9 @@
 				<img src="images/big-logo.svg" alt="" class="big-logo">
 			</div> -->
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" ></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" ></script>
+		
+		<script src="js/script.min.js" ></script>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 .hero {
-    min-height: 100%;
+    min-height: em(700);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
-    
+    transition: 1s;
 
     &__top {
         padding-top: em(60);
@@ -62,13 +62,13 @@
     line-height: 110%;
     letter-spacing: -0.04em;
     color: #fff;
+    margin-top: em(5,24);
 }
 .menu-link {
     position: relative;
     &::before{
         content: '';
         width: 0; 
-        
         height: em(2,24);
         background-color: #fff;
         position: absolute;
@@ -160,6 +160,10 @@
 
 .hero-second{
     transform: translateY(-350%);
+    transition: 1s;
+    .logo{
+        width: em(530);
+    }
 }
 
 .hero__top-fixed{
@@ -168,7 +172,19 @@
     z-index: 10;
     width: 96%;
     transition: 1s;
-    .logo{
-        width: em(530);
+    
+}
+
+.active{
+    position: relative;
+    &::before{
+        content:'';
+        width: 100%;
+        height: em(2,24);
+        background-color:#fff;
+        position: absolute;
+        top: em(35,24);
+        left: 0;
+        transition: .5s;
     }
 }

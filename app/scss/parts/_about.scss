@@ -1,5 +1,5 @@
 .about {
-    min-height: 100%;
+    min-height: 700px;
     height: 100vh;
     padding: 0 em(40) 0 em(40);
     // border: em(1) solid red;
@@ -61,10 +61,12 @@
         line-height: 110%;
         letter-spacing: -0.04em;
         color: #5a5a5a;
+        transition: .5s;
     }
 
     &__icon{
         margin-left: em(30,36);
+        fill: #5A5A5A;
     }
     // .about__slogan
 
@@ -82,3 +84,10 @@
     }
 }
 
+
+.about__link:hover{
+    color:#fff;
+}
+.about__link:hover .about__icon{
+    fill:#fff;
+}

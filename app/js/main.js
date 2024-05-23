@@ -1,7 +1,10 @@
+gsap.registerPlugin(ScrollTrigger) 
+
+
 items = document.querySelectorAll('.services-inner-item');
 
 items.forEach(function(item, index) {
-	item.addEventListener("click", function(){
+	item.addEventListener("mouseover", function(){
 		const img = this.getAttribute('data-img');
 		const text = this.getAttribute('data-text');
 
@@ -10,12 +13,63 @@ items.forEach(function(item, index) {
 
 		mainImg.setAttribute('src', img);
 		mainText.innerHTML = text;
-
-
-		console.log(img, text);
 	})
 	
 });
+
+
+// Получаем ссылки меню и секции
+const menuLinks = document.querySelectorAll('.menu-link');
+const sections = document.querySelectorAll('.section');
+
+function updateActiveLink() {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            const sectionId = '#' + section.getAttribute('id');
+            menuLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === sectionId);
+            });
+        }
+    });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+
+const tl = gsap.timeline()
+
+tl.to('.s1',{
+	scrollTrigger: {
+		trigger: '.who',
+		start: 'top center', 
+        end: '', 
+        scrub: 1,
+	},
+	yPercent:-90,
+	
+}).to('.s2',{
+	scrollTrigger: {
+		trigger: '.steps',
+		start: '-=300px center', 
+        end: '', 
+        scrub: 1,
+	},
+	yPercent:-70,
+	
+}).to('.s3',{
+	scrollTrigger: {
+		trigger: '.steps',
+		start: 'center center', 
+        end: '+=500', 
+        scrub: 1,
+	},
+	yPercent:-90,
+	
+})
 
 // Паралакс
 
@@ -50,7 +104,9 @@ let header = document.querySelector(".hero-second")
 
 document.onscroll = function () {
 	let scroll = window.scrollY;
-	if (scroll > 400) {
+	if (scroll == 0) {
+		header.classList.remove("hero__top-fixed");
+	}if (scroll > 400) {
 		header.classList.add("hero__top-fixed");
 	} else {
 		header.classList.remove("hero__top-fixed");
