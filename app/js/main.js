@@ -106,7 +106,7 @@ document.onscroll = function () {
 	let scroll = window.scrollY;
 	if (scroll == 0) {
 		header.classList.remove("hero__top-fixed");
-	}if (scroll > 400) {
+	}if (scroll > 600) {
 		header.classList.add("hero__top-fixed");
 	} else {
 		header.classList.remove("hero__top-fixed");

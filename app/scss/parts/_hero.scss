@@ -159,19 +159,22 @@
 }
 
 .hero-second{
-    transform: translateY(-350%);
+    position: fixed;
+    transform: translateY(-140%);
     transition: 1s;
+    z-index: 10;
+    width: 96%;
     .logo{
         width: em(530);
     }
 }
 
 .hero__top-fixed{
-    position: fixed;
+    
     transform: translateY(0%);
-    z-index: 10;
-    width: 96%;
-    transition: 1s;
+    
+    
+    // transition: 1s;
     
 }
 
