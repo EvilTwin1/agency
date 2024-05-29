@@ -69,10 +69,10 @@
     &::before{
         content: '';
         width: 0; 
-        height: em(2,24);
+        height: 1px;
         background-color: #fff;
         position: absolute;
-        top: em(35,24);
+        top: em(32,24);
         left: 0;
         transition: .5s;
     }
@@ -121,12 +121,13 @@
     border-radius: 50%;
     border: 1px solid #fff;
     backdrop-filter: blur(25px);
-    transition: .5s;
+    transition: .8s;
 }
 
 .main-btn:hover .main-btn-icon-wrrap{
     backdrop-filter: none;
     background-color:#fff;
+    transition: .5s;
 }
 
 .main-btn-icon {
@@ -183,10 +184,10 @@
     &::before{
         content:'';
         width: 100%;
-        height: em(2,24);
+        height: 1px;
         background-color:#fff;
         position: absolute;
-        top: em(35,24);
+        top: em(32,24);
         left: 0;
         transition: .5s;
     }
