@@ -1,6 +1,6 @@
 .works {
-    padding: em(136) em(40) 0 em(40);
-    margin-top: em(150);
+    padding: em(250) em(40) 0 em(40);
+    // margin-top: em(150);
     &__title {}
 
     &__info {
@@ -85,6 +85,7 @@
 
     &__img {
         width: 100%;
+        object-fit: cover;
     }
 
     // .card__inner
