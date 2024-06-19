@@ -92,3 +92,40 @@
 .about__link:hover .about__icon{
     fill:#fff;
 }
+
+
+@media screen and (max-width: 450px) {
+    
+    .about {
+        padding: 0 em(20) 0 em(20);
+        &__title {
+            font-size: em(16);
+            margin: 0;
+        }
+        &__inner{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        &__content{
+            font-size: em(24);
+            margin-top: em(140,24);
+            margin-bottom: em(100,24);
+        }
+        &__link{
+            margin: 0;
+        }
+        &__link{
+            font-size: em(24);
+        }
+        &__icon{
+            width: em(24,24);
+        }
+        &__slogan{
+            font-size: em(14);
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

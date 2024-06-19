@@ -192,3 +192,67 @@
         transition: .5s;
     }
 }
+
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        width: em(220);
+    }
+    .menu{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+        font-weight: 300;
+        font-size: em(24);
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: #fff;
+    }
+
+    .hero__bottom{
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .hero-second{
+        display: none;
+    }
+
+    .main-wrap{
+        margin-top: 0;
+        margin-left: auto;
+        margin-top: em(55);
+        
+    }
+    .title-main {
+        font-size: em(28);
+    }
+
+    .hero{
+        padding: 0 em(20) 0 em(20);
+        justify-content: start;
+        &__top{
+            padding-top: em(40);
+        }
+    }
+
+    .main-btn {
+        font-size: em(24);
+        position: absolute;
+        bottom: em(210,24);
+    }
+
+    .main-btn-icon{
+        width: em(22,24);
+    }
+
+    .arrow-down{
+        width: em(19);
+        right: em(20);
+        bottom: em(65);
+    }
+}

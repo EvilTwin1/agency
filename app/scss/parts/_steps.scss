@@ -60,3 +60,10 @@
     left: em(900);
     width: em(437);
 }
+
+
+@media screen and (max-width: 768px) {
+    .steps{
+        display: none;
+    }
+}

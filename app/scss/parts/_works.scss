@@ -134,3 +134,42 @@
     width: em(430);
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .works{
+        padding: em(0) em(20) 0 em(20);
+    }
+    .works__title{
+        font-size: em(16);
+    }
+    .works__info{
+        margin-top: em(60);
+    }
+    .works__header{
+        font-size: em(28);
+    }
+    .works__years{
+        font-size: em(28);
+    }
+    .works__content{
+        margin-top: em(40);
+    }
+
+
+    .card__inner{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .card__name{
+        font-size: em(16);
+    }
+    .card__tags{
+        font-size: em(16);
+        text-align: start;
+        width: em(250,16);
+    }
+    .card__year{
+        font-size: em(16);}
+}

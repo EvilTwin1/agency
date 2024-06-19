@@ -51,3 +51,10 @@
     bottom: em(-550);
     width: em(466);
 }
+
+
+@media screen and (max-width: 768px) {
+    .who{
+        display: none;
+    }
+}

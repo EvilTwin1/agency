@@ -8,8 +8,9 @@ body {
 	// @media (max-width: 1024px) {
 	// 	font-size: calc((16 / 10.24) * 1vw);
 	// }
-	@media (max-width: 500px) {
-		font-size: calc((16 / 4.8) * 1vw);
+
+	@media screen and (max-width: 450px) {
+		font-size: calc((16 / 4.5) * 1vw);
 	}
 }
 
