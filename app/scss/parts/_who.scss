@@ -55,6 +55,35 @@
 
 @media screen and (max-width: 768px) {
     .who{
-        display: none;
+        // display: none;
+        padding: 0 em(20);
+        padding-top: em(150);
+        // overflow-x: hidden;
+        &__title{
+            margin-left: 0;
+            font-size: 1em;
+        
+
+        }
+        &__main-text{
+            margin-left: 0;
+            font-size: em(22);
+            width: auto;
+            text-align: justify;
+        }
+        &__sub-text{
+            font-size: em(16);
+        }
+
+    }
+    .s1{
+        width: em(258);
+        top: em(100);
+        left: em(-110);
+    }
+    .s2{
+        width: em(265);
+        bottom: em(-350);
+        right: em(0);
     }
 }

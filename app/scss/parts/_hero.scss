@@ -198,6 +198,7 @@
 }
 
 @media screen and (max-width: 450px) {
+    .hero-second .logo,
     .logo {
         width: em(220);
     }
@@ -219,7 +220,7 @@
     }
 
     .hero-second{
-        display: none;
+        width: 91%;
     }
 
     .main-wrap{
@@ -236,7 +237,7 @@
         padding: 0 em(20) 0 em(20);
         justify-content: start;
         &__top{
-            padding-top: em(40);
+            padding-top: em(20);
         }
     }
 
