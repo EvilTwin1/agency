@@ -128,7 +128,30 @@ document.onscroll = function () {
 	}
 };
 
+document.getElementById('menu').addEventListener('click', function() {
+	document.getElementById('nav').classList.add('active');
+});
 
+document.getElementById('menu2').addEventListener('click', function() {
+	document.getElementById('nav').classList.add('active');
+});
+
+document.getElementById('close').addEventListener('click', function() {
+	document.getElementById('nav').classList.remove('active');
+});
+
+const menuItems = document.querySelectorAll('.nav__link');
+
+// Добавляем обработчик событий для каждого элемента меню
+menuItems.forEach(function(item) {
+	item.addEventListener('click', function() {
+		// Получаем целевой блок
+		const targetBlock = document.getElementById('nav');
+		
+		// Добавляем класс к целевому блоку
+		targetBlock.classList.remove('active');
+	});
+});
 
 
 // const accordionSections = document.querySelectorAll('.accordion-section');
@@ -157,36 +180,37 @@ document.onscroll = function () {
 // 	});
 // }
 
-const burger = document.querySelector('.burger');
-const menu = document.querySelector('.mob-menu');
-const close = document.querySelector('.mob-close');
-const link = document.querySelectorAll('.mob-list-item');
+// const burger = document.querySelector('.burger');
+// const menu = document.querySelector('.mob-menu');
+// const close = document.querySelector('.mob-close');
+// const link = document.querySelectorAll('.mob-list-item');
 
-burger.addEventListener('click', function(){
-	menu.classList.add('open');
-	const htmlElement = document.documentElement;
-	htmlElement.style.overflow = 'hidden';
-});
+// if
+// burger.addEventListener('click', function(){
+// 	menu.classList.add('open');
+// 	const htmlElement = document.documentElement;
+// 	htmlElement.style.overflow = 'hidden';
+// });
 
-close.addEventListener('click', function(){
-	menu.classList.remove('open');
-	const htmlElement = document.documentElement;
-	htmlElement.style.overflow = 'scroll';
-});
+// close.addEventListener('click', function(){
+// 	menu.classList.remove('open');
+// 	const htmlElement = document.documentElement;
+// 	htmlElement.style.overflow = 'scroll';
+// });
 
-link.forEach(function(item) {
-	item.addEventListener('click', function(){
-		menu.classList.remove('open');
-		const htmlElement = document.documentElement;
-		htmlElement.style.overflow = 'scroll';
-	});
-});
+// link.forEach(function(item) {
+// 	item.addEventListener('click', function(){
+// 		menu.classList.remove('open');
+// 		const htmlElement = document.documentElement;
+// 		htmlElement.style.overflow = 'scroll';
+// 	});
+// });
 
-const fab = document.querySelector('.fab');
+// const fab = document.querySelector('.fab');
 
-fab.addEventListener('click', function(){
-	fab.classList.toggle('fab-active');
-});
+// fab.addEventListener('click', function(){
+// 	fab.classList.toggle('fab-active');
+// });
 
 // fab.addEventListener('click', function(){
 // 	fab.classList.remove('fab-active');

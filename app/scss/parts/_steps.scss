@@ -10,6 +10,11 @@
 
     // .steps__row
 
+    &__inner{
+        display: flex;
+
+    }
+
     &__row {
         display: flex;
         margin-bottom: em(85);
