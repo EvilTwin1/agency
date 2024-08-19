@@ -153,6 +153,22 @@ menuItems.forEach(function(item) {
 	});
 });
 
+document.querySelector('.s4').addEventListener('mousemove', function(e) {
+	const element = this;
+	const rect = element.getBoundingClientRect();
+	const offsetX = e.clientX - rect.left - rect.width / 2;
+	const offsetY = e.clientY - rect.top - rect.height / 2;
+  
+	const rotationX = offsetY / 10;
+	const rotationY = -offsetX / 10;
+  
+	element.style.transform = `perspective(500px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+  });
+  
+  document.querySelector('.s4').addEventListener('mouseleave', function() {
+	this.style.transform = 'perspective(500px) rotateX(0) rotateY(0)';
+  });
+
 
 // const accordionSections = document.querySelectorAll('.accordion-section');
 

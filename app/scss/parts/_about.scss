@@ -93,9 +93,13 @@
     fill:#fff;
 }
 
+.about__content-mob{
+    display: none;
+}
 
 @media screen and (max-width: 450px) {
     
+
     .about {
         padding: 0 em(20) 0 em(20);
         &__title {
@@ -112,6 +116,7 @@
             font-size: em(24);
             margin-top: em(140,24);
             margin-bottom: em(100,24);
+            
         }
         &__link{
             margin: 0;
@@ -127,5 +132,11 @@
             width: 100%;
             text-align: center;
         }
+    }
+    .about__content-mob{
+        display: block;
+    }
+    .about__content-desc{
+        display: none;
     }
 }
