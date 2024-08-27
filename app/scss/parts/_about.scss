@@ -99,6 +99,12 @@
 
 @media screen and (max-width: 450px) {
     
+    @supports (height: 100dvh) {
+        .about {
+            min-height: auto;
+            height: 100dvh; /* Используем dvh, если поддерживается */
+        }
+    }
 
     .about {
         padding: 0 em(20) 0 em(20);

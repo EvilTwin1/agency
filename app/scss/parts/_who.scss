@@ -22,6 +22,10 @@
         color: #fff;
     }
 
+    &__main-text-w {
+        text-align-last: justify;
+    }
+
     // .who__sub-text
 
     &__sub-text {
@@ -53,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
     .who{
         // display: none;
         padding: 0 em(20);
@@ -78,7 +82,7 @@
     }
     .s1{
         width: em(258);
-        top: em(100);
+        top: em(-150);
         left: em(-110);
     }
     .s2{

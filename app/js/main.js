@@ -63,11 +63,11 @@ tl.to('.s1',{
 }).to('.s3',{
 	scrollTrigger: {
 		trigger: '.steps',
-		start: 'center center', 
-        end: '+=500', 
+		start: 'start center', 
+        // end: '+=300', 
         scrub: 1,
 	},
-	yPercent:-90,
+	yPercent:-100,
 	
 })
 
