@@ -26,6 +26,9 @@
         z-index: 2;
     }
 }
+
+
+
 .logo {
     width: em(920);
 }
@@ -198,6 +201,12 @@
 }
 
 @media screen and (max-width: 450px) {
+    @supports (height: 100dvh) {
+        .hero {
+            min-height: auto;
+            height: 100dvh; /* Используем dvh, если поддерживается */
+        }
+    }
     .hero-second .logo,
     .logo {
         width: em(220);
