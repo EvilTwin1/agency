@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 items = document.querySelectorAll('.services-inner-item');
 
+
 items.forEach(function(item, index) {
 	item.addEventListener("mouseover", function(){
 		const img = this.getAttribute('data-img');
@@ -13,6 +14,7 @@ items.forEach(function(item, index) {
 
 		mainImg.setAttribute('src', img);
 		mainText.innerHTML = text;
+		mainText.style.opacity = '1';
 	})
 	
 });
