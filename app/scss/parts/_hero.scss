@@ -115,8 +115,8 @@
 
 
 .main-btn-icon-wrrap {
-    width: em(101,48);
-    height: em(101,48);
+    width: em(150,48);
+    height: em(150,48);
     margin-left: em(42,48);
     display: flex;
     justify-content: center;
@@ -143,7 +143,8 @@
 }
 
 .main-wrap{
-    max-width: em(513);
+    max-width: em(580);
+    width: 100%;
     margin-top: em(-245);
 }
 .title-main {
@@ -208,6 +209,7 @@
 
 .lang{
     display: inline-block;
+    color: #6e6e6e;
 }
 
 .menu-btn{
@@ -220,6 +222,9 @@
             min-height: auto;
             height: 100dvh; /* Используем dvh, если поддерживается */
         }
+    }
+    .von{
+        display: none;
     }
     .hero-second .logo,
     .logo {

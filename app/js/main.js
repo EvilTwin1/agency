@@ -15,6 +15,7 @@ items.forEach(function(item, index) {
 		mainImg.setAttribute('src', img);
 		mainText.innerHTML = text;
 		mainText.style.opacity = '1';
+		mainImg.style.opacity = '1';
 	})
 	
 });
