@@ -61,7 +61,7 @@
 }
 .menu {
     font-weight: 300;
-    font-size: em(24);
+    font-size: em(23);
     line-height: 110%;
     letter-spacing: -0.04em;
     color: #fff;
@@ -115,14 +115,14 @@
 
 
 .main-btn-icon-wrrap {
-    width: em(150,48);
-    height: em(150,48);
+    width: em(101,48);
+    height: em(101,48);
     margin-left: em(42,48);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 0.4px solid #fff;
     backdrop-filter: blur(25px);
     transition: .8s;
 }
@@ -135,6 +135,7 @@
 
 .main-btn-icon {
     fill: #fff;
+    width: em(14);
     // transition: .5s;
 }
 
@@ -144,7 +145,7 @@
 
 .main-wrap{
     max-width: em(580);
-    width: 100%;
+    // width: 100%;
     margin-top: em(-245);
 }
 .title-main {
@@ -175,12 +176,8 @@
 }
 
 .hero__top-fixed{
-    
     transform: translateY(0%);
-    
-    
     // transition: 1s;
-    
 }
 
 .active{
@@ -222,6 +219,10 @@
             min-height: auto;
             height: 100dvh; /* Используем dvh, если поддерживается */
         }
+    }
+    .main-btn-icon-wrrap {
+        width: em(150,48);
+        height: em(150,48);
     }
     .von{
         display: none;

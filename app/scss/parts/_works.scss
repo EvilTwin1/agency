@@ -16,6 +16,7 @@
         letter-spacing: -0.04em;
         // text-align: justify;
         color: #fff;
+        position: relative;
     }
 
     &__years {
@@ -69,6 +70,15 @@
         margin-left: em(40,36);
     }
 
+}
+
+.sub{
+    font-weight: 300;
+    font-size: em(7);
+    position: absolute;
+    top: -25%;
+    right: -1%;
+    margin-top: em(-10);
 }
 
 .card {
@@ -149,6 +159,7 @@
     .works__header{
         font-size: em(28);
     }
+    
     .works__years{
         font-size: em(28);
     }
