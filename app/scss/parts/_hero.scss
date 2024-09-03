@@ -61,7 +61,7 @@
 }
 .menu {
     font-weight: 300;
-    font-size: em(23);
+    font-size: em(22);
     line-height: 110%;
     letter-spacing: -0.04em;
     color: #fff;
@@ -207,6 +207,7 @@
 .lang{
     display: inline-block;
     color: #6e6e6e;
+    margin-right: em(-7);
 }
 
 .menu-btn{
@@ -229,7 +230,10 @@
     }
     .hero-second .logo,
     .logo {
-        width: em(220);
+        width: em(210);
+    }
+    .logo-fix{
+        width: em(140);
     }
     .menu{
         display: none;
@@ -249,7 +253,7 @@
     }
 
     .hero-second{
-        width: 91%;
+        width: 91.3%;
     }
 
     .main-wrap{
@@ -259,7 +263,7 @@
         
     }
     .title-main {
-        font-size: em(28);
+        font-size: em(26);
     }
 
     .hero{

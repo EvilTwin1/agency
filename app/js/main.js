@@ -89,6 +89,20 @@ document.querySelectorAll('.card').forEach(card => {
 	});
   });
 
+
+  const listItems = document.querySelectorAll('.serv-mob__item');
+
+  // Добавляем обработчик события на каждый элемент
+  listItems.forEach(item => {
+	item.addEventListener('click', () => {
+	  // Удаляем активный класс у всех элементов
+	  listItems.forEach(i => i.classList.remove('active-tab'));
+	  
+	  // Добавляем активный класс к текущему элементу
+	  item.classList.add('active-tab');
+	});
+  });
+
 // Паралакс
 
 
