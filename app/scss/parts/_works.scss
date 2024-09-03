@@ -72,6 +72,37 @@
 
 }
 
+.work-icon{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: em(101);
+    height: em(101);
+    // margin-left: em(42,48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.4px solid #fff;
+    backdrop-filter: blur(25px);
+    transition: .8s;
+}
+.work-arrow{
+    width: em(30);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(#000000, .6)
+}
 .sub{
     font-weight: 300;
     font-size: em(6);
@@ -90,7 +121,8 @@
 
     &__img-wrap{
         overflow: hidden;
-        border-radius: em(15)
+        border-radius: em(15);
+        position:relative;
     }
 
     &__img {
@@ -144,6 +176,12 @@
     width: em(430);
 }
 
+.card:hover .work-icon{
+    opacity: 1;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
 
 
 @media screen and (max-width: 450px) {
