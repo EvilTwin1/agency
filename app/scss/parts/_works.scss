@@ -146,7 +146,7 @@
 	&__img {
 		width: 100%;
 		object-fit: cover;
-		transition: 0.5s;
+		transition: 1s;
 	}
 
 	// .card__inner
@@ -203,8 +203,8 @@
 }
 
 .card:hover .card__img {
-	transform: scale(1.3);
-	transition: 0.5s;
+	transform: scale(1.2);
+	transition: 1s;
 }
 
 @media screen and (max-width: 450px) {
