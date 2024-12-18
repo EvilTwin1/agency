@@ -63,6 +63,7 @@
 	top: em(600);
 	left: em(750);
 	width: em(537);
+	z-index: -1;
 }
 
 @media screen and (max-width: 450px) {
@@ -97,7 +98,7 @@
 	}
 
 	.s3 {
-		width: em(223);
+		width: em(260);
 		left: em(100);
 		top: em(790);
 	}

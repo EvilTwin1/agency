@@ -17,6 +17,19 @@ items.forEach(function (item, index) {
 	})
 })
 
+// Слушаем событие полной загрузки страницы
+window.addEventListener('load', () => {
+	const preloader = document.getElementById('preloader') // Получаем элемент прелоадера
+
+	// Добавляем класс для плавного исчезновения
+	preloader.classList.add('hidden-preloader')
+
+	// Полностью удаляем прелоадер из DOM после анимации
+	setTimeout(() => {
+		preloader.remove()
+	}, 500) // 500 мс соответствует времени анимации transition
+})
+
 // Получаем ссылки меню и секции
 const menuLinks = document.querySelectorAll('.menu-link')
 const sections = document.querySelectorAll('.section')

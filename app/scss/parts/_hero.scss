@@ -1,3 +1,28 @@
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; /* Поверх всего */
+	transition: opacity 0.5s ease; /* Плавное исчезновение */
+}
+
+#preloader.hidden {
+	opacity: 0; /* Прозрачность */
+	pointer-events: none; /* Отключаем взаимодействие */
+}
+
+.img-preloader {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .hero {
 	min-height: em(700);
 	height: 100vh;
